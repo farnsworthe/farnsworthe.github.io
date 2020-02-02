@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="tamacss.css">
+<link rel="stylesheet" type="text/css" href="bttn.css">
+<script type="text/javascript" src="tamajs.js"></script>
+
+<script type="text/javascript">
+  var answers = ["He's very sure of it!",
+                 "He looks confident.",
+                 "He's very excited, it seems so!",
+                 "He seems certain of it.",
+                 "He hesitates, but agrees it will happen.",
+                 "He thinks your chances are good!",
+                 "He looks a little sad, I wouldn't count on it.",
+                 "He shakes his head.",
+                 "He looks sad, I don't think your chances are good.",
+                 "He thinks that you shouldn't know this answer yet.",
+                 "He looks to be thinking very intently, but doesn't have an answer."];
+
+  window.onload = function() {
+     var ask = document.getElementById("ask");
+     var answer = document.getElementById("answer");
+     var eightball = document.getElementById("fortune");
+     var question = document.getElementById("question");
+
+     eightball.addEventListener("click", function() {
+         ask.innerText = "ask again?";
+         var num = Math.floor(Math.random() * Math.floor(answers.length));
+         answer.innerText = answers[num];
+         if (num == 0 || num == 2){
+           document.getElementById('ferretimg').src='dlove.png';
+         }
+         else if (num == 1 || num == 3 ||num == 5) {
+           document.getElementById('ferretimg').src='dhappy.png';
+         }
+         else if (num == 4) {
+           document.getElementById('ferretimg').src='dianxia.png';
+         }
+         else if (num == 6 || num == 7 || num == 8) {
+           document.getElementById('ferretimg').src='dsad.png';
+         }
+         else if (num == 9 || num == 10) {
+           document.getElementById('ferretimg').src='dnervous.png';
+         }
+
+     });
+  };
+</script>
+</head>
+
+<body>
+
+<div class="container">
+  <div id="name" class="nametag"> fortune telling
+  </div>
+<p>
+  <div class="containerd"><br><br><br><br>
+<img id="ferretimg" src="dianxia.png"></div><br>
+He can tell you many things. Ask about any question or matter.<p>
+
+  <input type="text" id="question" />
+    <div id="fortune" class="fortune">
+      <div class="answer">
+        <p class="bttn-simple bttn-sm bttn-default" id="ask">ask!</p>
+        <p id="answer"></p>
+      </div>
+    </div>
+    <a href = "play.html" class="bttn-simple bttn-sm bttn-default">back</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="tamacss.css">
+<link rel="stylesheet" type="text/css" href="bttn.css">
+<script type="text/javascript" src="tamajs.js"></script>
+
+
+  <script>
+
+  function gentle() {
+     document.getElementById("text").innerHTML = "He really likes that!";
+     document.getElementById('ferretimg').src='dpets.png';
+  }
+
+  function firm() {
+     document.getElementById("text").innerHTML = "Please be gentler!";
+     document.getElementById('ferretimg').src='dangry.png';
+  }
+
+  function wiggle() {
+     document.getElementById("text").innerHTML = "He's so majestic.";
+     document.getElementById('ferretimg').src='dwiggle.png';
+  }
+
+  </script>
+
+
+</head>
+
+<body>
+
+<div class="container">
+  <div id="name" class="nametag"> interact
+  </div>
+<p>
+  <div class="containerd"><br><br><br>
+<img id="ferretimg" src="dhappy.png"></div><br>
+ <p id="text">How do you want to pet him?</p>
+<p>
+
+  <button class="bttn-simple bttn-sm bttn-default" onclick="gentle()" id="op1">gently</button>
+  <button class="bttn-simple bttn-sm bttn-default" onclick="firm()" id="op2">firmly</button>
+  <button class="bttn-simple bttn-sm bttn-default" onclick="wiggle()" id="op3">pick him up and wiggle him</button><br><br>
+<a href = "next.html" class="bttn-simple bttn-sm bttn-default">back</a>
+
+
+</div>
+</body>
+</html>

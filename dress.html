@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="tamacss.css">
+<link rel="stylesheet" type="text/css" href="bttn.css">
+<script type="text/javascript" src="tamajs.js"></script>
+
+<script>
+
+function hat() {
+   document.getElementById("text").innerHTML = "He looks very rustic.";
+   document.getElementById('ferretimg').src='bhat.png';
+}
+
+function scarf() {
+   document.getElementById("text").innerHTML = "He looks very cozy.";
+   document.getElementById('ferretimg').src='dscarf.png';
+}
+
+function muffs() {
+   document.getElementById("text").innerHTML = "He looks very cute.";
+   document.getElementById('ferretimg').src='dmuffs.png';
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div id="name" class="nametag"> wardrobe
+  </div>
+<p>
+  <div class="containerd"><br><br><br><br>
+<img id="ferretimg" src="dianxia.png"></div>
+ <p id="text">What should he wear?</p>
+
+<button class="bttn-simple bttn-sm bttn-default" onclick="hat()" id="op1">a hat</button>
+<button class="bttn-simple bttn-sm bttn-default" onclick="scarf()" id="op2">a scarf</button>
+<button class="bttn-simple bttn-sm bttn-default" onclick="muffs()" id="op3">some earmuffs</button><br><br>
+
+
+<a href = "interact.html" class="bttn-simple bttn-sm bttn-default">back</a>
+
+
+</div>
+</body>
+</html>

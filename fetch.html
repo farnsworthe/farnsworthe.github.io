@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="tamacss.css">
+<link rel="stylesheet" type="text/css" href="bttn.css">
+<script type="text/javascript" src="tamajs.js"></script>
+
+<script>
+function fetch() {
+   document.getElementById("text").innerHTML = "He runs after it!<br>...<br>...<br>...<br>...<br>Oops... I don't think he's coming back...";
+   document.getElementById("fetchbutton").innerHTML = "sorry :(";
+   document.getElementById('ferretimg').src='';
+}
+</script>
+
+
+</head>
+
+<body>
+
+<div class="container">
+  <div id="name" class="nametag"> fetch
+  </div>
+<p>
+  <div class="containerd"><br><br><br><br>
+<img id="ferretimg" src="dhappy.png"></div>
+ <p id ="text">He waits patiently.</p>
+ <button id="fetchbutton" class="bttn-simple bttn-sm bttn-default" onclick="fetch()">throw the ball</button>
+<p>
+
+<a href = "play.html" class="bttn-simple bttn-sm bttn-default">back</a>
+
+
+</div>
+</body>
+</html>

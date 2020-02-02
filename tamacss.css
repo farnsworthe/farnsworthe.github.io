@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap');
+
+body {
+  background-color: #e8e7f7;
+  font-family: Jua;
+  color: #cd304d;
+  text-align: center;
+}
+
+button {
+  font-family: Jua;
+  font-size: 1em;
+  color: #52131e;
+  background: white;
+  border: #52131e solid .5px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+
+button:hover {
+  background-color: #edae21;
+  color: white;
+  border:none;
+}
+
+
+.container {
+  width: 350px;
+  height: 600px;
+  padding-bottom: 5%;
+  display: inline-block;
+  background-color:white;
+  padding: auto;
+  position:absolute;
+  border-radius: 10px;
+  left:50%;
+  top:50%;
+  margin:-300px 0 0 -175px;
+  padding: 1em 1.5em 1em 1.5em;
+}
+
+img{
+  max-width: 80%;
+  height: auto;
+}
+
+.containerd {
+  width:300px;
+  height: 300px;
+  background-color: #f6d790;
+  margin: auto;
+  border-radius: 80px;
+}
+
+.nametag {
+  background-color: #cd304d;
+  width: 275px;
+  margin: auto;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+
+  -webkit-text-fill-color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.welcome {
+  background-color: #cd304d;
+  width: 125px;
+  margin: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 50px;
+
+  -webkit-text-fill-color: white;
+  font-size: 20px;
+  text-align: center;
+  transition: all .3s cubic-bezier(.02,.01,.47,1);
+}
+
+input {
+  font-family: Jua;
+  font-size: 1em;
+  color: #52131e;
+  background: white;
+  border: #52131e solid .5px;
+}
+
+a {
+  font-family: Jua;
+  font-size: 1em;
+  color: #52131e;
+  background: white;
+  border: #52131e solid .5px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 10px 19px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #edae21;
+  color: white;
+  border:none;
+}
